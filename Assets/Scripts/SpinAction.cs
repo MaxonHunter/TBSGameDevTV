@@ -7,6 +7,7 @@ public class SpinAction : BaseAction
 {
 
     float totalSpinAmount;
+    int spinActionPointCost = 2;
 
     void Update()
     {
@@ -40,5 +41,10 @@ public class SpinAction : BaseAction
     public override string GetActionName()
     {
         return "Spin";
+    }
+
+    public override int GetActionPointCost()
+    {
+        return spinActionPointCost;
     }
 }
